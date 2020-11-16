@@ -1,3 +1,136 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "ckStyle";
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+body {
+  font-family: 'Poor Story', cursive;
+}
+
+.pen-red {
+  background-color: white;
+  color: #e74c3c;
+}
+.pen-green {
+  background-color: white;
+  color: #2ecc71;
+}
+.marker-yellow {
+  background-color: #f1c40f;
+}
+
+.marker-green{
+  background-color: #27ae60;
+}
+
+.marker-pink {
+  background-color: #FDA7DF;
+}
+
+.marker-blue{
+  background-color: #0984e3;
+}
+
+blockquote {
+  overflow: hidden;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: italic;
+  border-left: solid 5px hsl(0, 0%, 80%);
+}
+
+input:focus {
+  outline: none;
+}
+
+.ck-editor {
+  min-width: 69.8rem;
+  z-index: 0;
+}
+
+.ck-editor__editable {
+  min-height: 30rem;
+  z-index: 0;
+}
+
+.fade-in-box {
+  animation: fadein 0.2s;
+  -moz-animation: fadein 0.2s; /* Firefox */
+  -webkit-animation: fadein 0.2s; /* Safari and Chrome */
+  -o-animation: fadein 0.2s; /* Opera */
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateX(-90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+  0% {
+    opacity: 0;
+    transform: translateX(-90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  0% {
+    opacity: 0;
+    transform: translateX(-90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  0% {
+    opacity: 0;
+    transform: translateX(-90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.fade-out-box {
+  animation : fadeout 0.2s;
+  -moz-animation: fadeout 0.2s; /* Firefox */
+  -webkit-animation: fadeout 0.2s; /* Safari and Chrome */
+  -o-animation: fadeout 0.2s; /* Opera */
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.header_navibox {
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(201, 199, 201, 1);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(201, 199, 201, 1);
+  box-shadow: 0px 4px 5px 0px rgba(201, 199, 201, 1);
+  backdrop-filter: saturate(200%) blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+figure > img {
+  margin: 0px auto;
+  border-radius: 5px;
+}
